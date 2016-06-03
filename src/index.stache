@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <can-import from="my-app/styles.less!" />
+    <can-import from="my-app/app" export-as="viewModel" />
+
+    <can-import from="my-app/bs-css/normalize.css" />
+    <can-import from="my-app/bs-css/print.css" />
+    <can-import from="my-app/bs-css/reboot.css" />
+    <can-import from="my-app/bs-css/type.css" />
+    <can-import from="my-app/bs-css/images.css" />
+    <can-import from="my-app/bs-css/code.css" />
+    <can-import from="my-app/bs-css/grid.css" />
+    <can-import from="my-app/bs-css/tables.css" />
+    <can-import from="my-app/bs-css/forms.css" />
+    <can-import from="my-app/bs-css/buttons.css" />
+
+    <can-import from="my-app/bs-css/utilities.css" />
+    <can-import from="my-app/bs-css/utilities-background.css" />
+    <can-import from="my-app/bs-css/utilities-spacing.css" />
+    <can-import from="my-app/bs-css/utilities-responsive.css" />
+
+    <can-import from="my-app/bootstrap/tooltip/tooltip" />
+
+    <bootstrap-tooltip/>
+
+    {{#switch env.NODE_ENV}}
+      {{#case "production"}}
+        <script src="{{joinBase 'node_modules/steal/steal.production.js'}}"  main="my-app/index.stache!done-autorender"></script>
+      {{/case}}
+      {{#default}}
+        <script src="/node_modules/steal/steal.js"></script>
+      {{/default}}
+    {{/switch}}
+  </body>
+</html>

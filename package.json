@@ -1,0 +1,84 @@
+{
+  "name": "my-app",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "test": "testee src/test.html --browsers firefox --reporter Spec",
+    "start": "done-serve --port 8080",
+    "develop": "done-serve --develop --port 8080",
+    "document": "documentjs",
+    "build": "node build"
+  },
+  "main": "my-app/index.stache!done-autorender",
+  "files": [
+    "src"
+  ],
+  "keywords": [],
+  "system": {
+    "main": "my-app/index.stache!done-autorender",
+    "directories": {
+      "lib": "src"
+    },
+    "configDependencies": [
+      "live-reload",
+      "node_modules/can-zone/register"
+    ],
+    "npmAlgorithm": "flat",
+    "map": {
+      "bs-util": "./node_modules/bootstrap/dist/js/umd/util",
+      "bs-alert": "./node_modules/bootstrap/dist/js/umd/alert",
+      "bs-button": "./node_modules/bootstrap/dist/js/umd/button",
+      "bs-carousel": "./node_modules/bootstrap/dist/js/umd/carousel",
+      "bs-collapse": "./node_modules/bootstrap/dist/js/umd/collapse",
+      "bs-dropdown": "./node_modules/bootstrap/dist/js/umd/dropdown",
+      "bs-modal": "./node_modules/bootstrap/dist/js/umd/modal",
+      "bs-scrollspy": "./node_modules/bootstrap/dist/js/umd/scrollspy",
+      "bs-tab": "./node_modules/bootstrap/dist/js/umd/tab",
+      "bs-tooltip": "./node_modules/bootstrap/dist/js/umd/tooltip",
+      "bs-popover": "./node_modules/bootstrap/dist/js/umd/popover"
+    },
+    "meta": {
+      "bs-tooltip": {
+        "format": "global",
+        "deps": ["tether"]
+      },
+      "bs-popover": {
+        "format": "global",
+        "deps": ["tether"]
+      },
+      "tether": {
+        "format": "global"
+      }
+    }
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "can": "^2.3.16",
+    "can-connect": "^0.5.0",
+    "can-zone": "^0.5.0",
+    "done-autorender": "^0.8.0",
+    "done-component": "^0.4.0",
+    "done-css": "~2.0.2",
+    "done-serve": "^0.2.0",
+    "generator-donejs": "^0.9.0",
+    "jquery": "~2.2.1",
+    "steal": "^0.16.0",
+    "tether": "^1.3.2"
+  },
+  "devDependencies": {
+    "can-fixture": "^0.1.2",
+    "documentjs": "^0.4.2",
+    "donejs-cli": "^0.9.4",
+    "donejs-deploy": "^0.4.0",
+    "funcunit": "~3.0.0",
+    "steal-qunit": "^0.1.1",
+    "steal-tools": "^0.16.0",
+    "testee": "^0.2.4"
+  }
+}

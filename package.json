@@ -30,28 +30,7 @@
       "node_modules/can-zone/register"
     ],
     "npmAlgorithm": "flat",
-    "map": {
-      "bs-util": "./node_modules/bootstrap/dist/js/umd/util",
-      "bs-alert": "./node_modules/bootstrap/dist/js/umd/alert",
-      "bs-button": "./node_modules/bootstrap/dist/js/umd/button",
-      "bs-carousel": "./node_modules/bootstrap/dist/js/umd/carousel",
-      "bs-collapse": "./node_modules/bootstrap/dist/js/umd/collapse",
-      "bs-dropdown": "./node_modules/bootstrap/dist/js/umd/dropdown",
-      "bs-modal": "./node_modules/bootstrap/dist/js/umd/modal",
-      "bs-scrollspy": "./node_modules/bootstrap/dist/js/umd/scrollspy",
-      "bs-tab": "./node_modules/bootstrap/dist/js/umd/tab",
-      "bs-tooltip": "./node_modules/bootstrap/dist/js/umd/tooltip",
-      "bs-popover": "./node_modules/bootstrap/dist/js/umd/popover"
-    },
     "meta": {
-      "bs-tooltip": {
-        "format": "global",
-        "deps": ["tether"]
-      },
-      "bs-popover": {
-        "format": "global",
-        "deps": ["tether"]
-      },
       "tether": {
         "format": "global"
       }

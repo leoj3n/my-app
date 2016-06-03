@@ -3,7 +3,7 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <can-import from="my-app/styles.less!" />
+    <can-import from="my-app/styles.less" />
     <can-import from="my-app/app" export-as="viewModel" />
 
     <can-import from="my-app/bs-css/normalize.css" />

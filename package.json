@@ -31,6 +31,12 @@
     ],
     "npmAlgorithm": "flat",
     "meta": {
+      "bootstrap/dist/js/umd/tooltip": {
+        "deps": ["tether"]
+      },
+      "bootstrap/dist/js/umd/popover": {
+        "deps": ["tether"]
+      },
       "tether": {
         "format": "global"
       }

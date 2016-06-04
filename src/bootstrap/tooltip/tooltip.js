@@ -16,7 +16,7 @@ export default Component.extend({
   tag: 'bootstrap-tooltip',
   events: {
     inserted: function() {
-      $(this.element.children[0]).tooltip();
+      $(this.element).find('[data-toggle="tooltip"]').tooltip();
     }
   },
   ViewModel: ViewModel,

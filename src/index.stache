@@ -22,7 +22,7 @@
     <can-import from="./bootstrap/css/utilities-spacing.css" />
     <can-import from="./bootstrap/css/utilities-responsive.css" />
 
-    <can-import from="my-app/bootstrap/tooltip/tooltip" />
+    <can-import from="./bootstrap/tooltip/tooltip" />
 
     <bootstrap-tooltip>This is how you use a TOOLTIP!</bootstrap-tooltip>
 

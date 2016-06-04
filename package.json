@@ -12,6 +12,7 @@
     "test": "testee src/test.html --browsers firefox --reporter Spec",
     "start": "done-serve --port 8080",
     "develop": "done-serve --develop --port 8080",
+    "bootstrap": "concurrently --kill-others 'npm run develop' 'node-sass --output-style compressed --watch ./bs-scss --output ./src/bootstrap/css'",
     "document": "documentjs",
     "build": "node build"
   },
@@ -32,10 +33,14 @@
     "npmAlgorithm": "flat",
     "meta": {
       "bootstrap/dist/js/umd/tooltip": {
-        "deps": ["tether"]
+        "deps": [
+          "tether"
+        ]
       },
       "bootstrap/dist/js/umd/popover": {
-        "deps": ["tether"]
+        "deps": [
+          "tether"
+        ]
       },
       "tether": {
         "format": "global"
@@ -64,6 +69,7 @@
   },
   "devDependencies": {
     "can-fixture": "^0.4.0-pre.2",
+    "concurrently": "^2.1.0",
     "documentjs": "^0.4.2",
     "donejs-cli": "0.10.0-pre.0",
     "donejs-deploy": "^0.4.0",

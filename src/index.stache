@@ -6,25 +6,25 @@
     <can-import from="my-app/styles.less" />
     <can-import from="my-app/app" export-as="viewModel" />
 
-    <can-import from="my-app/bs-css/normalize.css" />
-    <can-import from="my-app/bs-css/print.css" />
-    <can-import from="my-app/bs-css/reboot.css" />
-    <can-import from="my-app/bs-css/type.css" />
-    <can-import from="my-app/bs-css/images.css" />
-    <can-import from="my-app/bs-css/code.css" />
-    <can-import from="my-app/bs-css/grid.css" />
-    <can-import from="my-app/bs-css/tables.css" />
-    <can-import from="my-app/bs-css/forms.css" />
-    <can-import from="my-app/bs-css/buttons.css" />
+    <can-import from="./bootstrap/css/normalize.css" />
+    <can-import from="./bootstrap/css/print.css" />
+    <can-import from="./bootstrap/css/reboot.css" />
+    <can-import from="./bootstrap/css/type.css" />
+    <can-import from="./bootstrap/css/images.css" />
+    <can-import from="./bootstrap/css/code.css" />
+    <can-import from="./bootstrap/css/grid.css" />
+    <can-import from="./bootstrap/css/tables.css" />
+    <can-import from="./bootstrap/css/forms.css" />
+    <can-import from="./bootstrap/css/buttons.css" />
 
-    <can-import from="my-app/bs-css/utilities.css" />
-    <can-import from="my-app/bs-css/utilities-background.css" />
-    <can-import from="my-app/bs-css/utilities-spacing.css" />
-    <can-import from="my-app/bs-css/utilities-responsive.css" />
+    <can-import from="./bootstrap/css/utilities.css" />
+    <can-import from="./bootstrap/css/utilities-background.css" />
+    <can-import from="./bootstrap/css/utilities-spacing.css" />
+    <can-import from="./bootstrap/css/utilities-responsive.css" />
 
     <can-import from="my-app/bootstrap/tooltip/tooltip" />
 
-    <bootstrap-tooltip/>
+    <bootstrap-tooltip>This is how you use a TOOLTIP!</bootstrap-tooltip>
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}

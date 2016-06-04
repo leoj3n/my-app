@@ -1,9 +1,10 @@
 import Component from "can-component";
 import DefineMap from "can-define/map/";
-import './tooltip.less';
 import template from './tooltip.stache';
 import $ from 'jquery';
-import 'my-app/bs/tooltip';
+import 'bootstrap/dist/js/umd/tooltip';
+import './../css/tooltip.css';
+import './tooltip.less';
 
 export const ViewModel = DefineMap.extend({
   message: {

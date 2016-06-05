@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light">
+
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">☰</button>
+
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <div class="nav navbar-nav">
+      {{#each pages}}
+        <a class="nav-item nav-link{{#if active}} active{{/if}}" href="{{url}}">{{name}}{{#if active}} <span class="sr-only">(current)</span>{{/if}}</a>
+      {{/each}}
+    </div>
+  </div>
+
+</nav>

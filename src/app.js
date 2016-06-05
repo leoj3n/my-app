@@ -4,6 +4,7 @@ import "can-route-pushstate";
 
 const AppViewModel = DefineMap.extend({
   route: "string",
+  page: "string",
   message: {
     value: 'Hello World!',
     serialize: false
@@ -13,5 +14,7 @@ const AppViewModel = DefineMap.extend({
     serialize: false
   }
 });
+
+route('/:page', { page: 'home' });
 
 export default AppViewModel;

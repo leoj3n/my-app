@@ -3,8 +3,8 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <can-import from="my-app/styles.less" />
-    <can-import from="my-app/app" export-as="viewModel" />
+    <can-import from="./styles.less" />
+    <can-import from="./app" export-as="viewModel" />
 
     <can-import from="./bootstrap/css/normalize.css" />
     <can-import from="./bootstrap/css/print.css" />
@@ -22,9 +22,41 @@
     <can-import from="./bootstrap/css/utilities-spacing.css" />
     <can-import from="./bootstrap/css/utilities-responsive.css" />
 
-    <can-import from="./bootstrap/tooltip/tooltip" />
+    <can-import from="./app/navigation/navigation" />
+    <can-import from="./loading.component" />
 
-    <bootstrap-tooltip>This is how you use a TOOLTIP!</bootstrap-tooltip>
+    <div id="wrap">
+      <div id="bg">
+        <img
+          src="{{joinBase 'src/images/bg.jpg'}}" />
+      </div>
+      <div id="contain">
+        <div id="card1" class="card">
+          <img
+            src="{{joinBase 'src/images/card-1.jpg'}}" />
+        </div>
+        <div id="card2" class="card">
+          <img
+            src="{{joinBase 'src/images/card-2.jpg'}}" />
+        </div>
+        <div id="card3">
+          <app-navigation {page}="page"/>
+
+          {{#switch page}}
+            {{#case "home"}}
+              <can-import from="./app/home/home" can-tag="app-loading">
+                <app-home/>
+              </can-import>
+            {{/case}}
+            {{#case "photo"}}
+              <can-import from="./app/photos/photos" can-tag="app-loading">
+                <app-photos/>
+              </can-import>
+            {{/case}}
+          {{/switch}}
+        </div>
+      </div>
+    </div>
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}

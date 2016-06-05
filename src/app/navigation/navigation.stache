@@ -1,0 +1,5 @@
+<can-import from="my-app/bootstrap/navbar/" />
+
+<header>
+  <bootstrap-navbar><bootstrap-navbar>
+</header>

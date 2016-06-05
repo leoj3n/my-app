@@ -1,4 +1,69 @@
-body {
-  font-family: "Helvetica Neue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-  font-weight: 300;
+.loading {
+  background: #ffffff url(images/loading.gif) no-repeat center center;
+  min-height: 60px;
+}
+#contain {
+  min-width: 300px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  position: relative;
+}
+.card {
+  top:0;
+  position: absolute;
+  border: 20px solid white;
+}
+.card img {
+  width: 100%;
+}
+#bg {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+#bg img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  max-width: 1300px;
+}
+#card1 {
+  left: 5%;
+  right: 30%;
+  background: gray;
+  transform: rotate(-5deg);
+  box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+}
+#card2 {
+  left: 30%;
+  right: 5%;
+  background: gray;
+  transform: rotate(5deg);
+  box-shadow: 1px 1px 20px rgba(0,0,0,.2);
+}
+#card3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  position: relative;
+  box-shadow: 1px 1px 25px rgba(0,0,0,.3);
+  border: 20px solid white;
+  border-top: 0;
+  min-height: 640px;
+}
+#card3 p {
+  padding: 20px 50px 40px 50px;
+}
+#card3 img {
+  width: 100%
+}
+#card3 .foot {
+  padding: 30px 50px 0 50px;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  font-size: 2em;
+  position: relative;
+  border-top: 1px solid gray;
 }

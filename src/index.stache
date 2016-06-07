@@ -40,7 +40,7 @@
             src="{{joinBase 'src/images/card-2.jpg'}}" />
         </div>
         <div id="card3">
-          <app-navigation {page}="page"/>
+          <app-navigation/>
 
           {{#switch page}}
             {{#case "home"}}
